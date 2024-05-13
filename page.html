@@ -6,14 +6,135 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="flex flex-row p-8 border solid">
-    <div class="posi">
-        LOGO
-    </div>
-    <div>
-        Profil
+<header class="flex flex-row py-7 border solid shadow-sm place-content-center">
+    <div class="flex justify-between w-2/4">
+        <div>
+            LOGO
+        </div>
+        <div>
+            Profil
+        </div>
     </div>
 </header>
+<div id="wrapper" class="flex flex-col place-content-center w-3/5 mx-auto">
+    <section id="main" class="">
+        <div id="title" class="flex flex-row justify-between items-center my-6">
+            <div class="text-3xl font-semibold">Steirisches Liebesnest in St. Anna am Lavantegg, Österreich</div>
+            <div class="text-red-500">&#10084;</div>
+        </div>
+        <div id="images" class="mt-4 grid grid-cols-4 gap-2 justify-items-center">
+            <div class="col-span-1">
+                <div class="relative mb-2">
+                    <img src="assets/kitchen.jpg" alt="Kitchen" class="rounded-2xl shadow-lg">
+                </div>
+                <div class="relative">
+                    <img src="assets/fireplace.jpg" alt="Fireplace" class="rounded-2xl shadow-lg">
+                </div>
+            </div>
+            <div class="col-span-2 relative">
+                <img src="assets/house.jpg" alt="Cabin" class="rounded-2xl shadow-lg">
+            </div>
+            <div class="col-span-1">
+                <div class="relative mb-2">
+                    <img src="assets/logs.jpg" alt="Log-Storage" class="rounded-2xl shadow-lg">
+                </div>
+                <div class="relative">
+                    <img src="assets/living.jpg" alt="Living room" class="rounded-2xl shadow-lg">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="details" class="grid grid-cols-3 gap-8 mt-8">
+        <div id="left_side" class="col-span-2">
+            <div id="title_info" class="mb-6">
+                <div class="text-2xl font-semibold">Steirisches Liebesnest in St. Anna am Lavantegg, Österreich</div>
+                <div class="text-md text-gray-600">2 Gäste &bull; 1 Schlafzimmer &bull; 1 Doppelbett &bull; 1 Bad </div>
+            </div>
+            <div id="review_card" class="flex items-center border rounded-2xl my-8 p-4 gap-6">
+                <div class="w-min flex flex-col items-center">
+                    <img class="w-8" src="assets/guarantee-icon.png" alt="award-icon">
+                    Gästeliebling
+                </div>
+                <div class="text-left">Laut Gästen eine der aufregendsten Unterkünfte in der Steiermark</div>
+                <div class="text-center w-32">
+                    <span class="font-bold text-xl">4,87</span>
+                    <br>
+                    <span class="text-xs">💛💛💛💛💛</span>
+                </div>
+                <div class="border-b w-8 transform origin-center rotate-90"></div>
+                <div class="text-center">
+                    <span class="font-bold text-xl">21</span>
+                    Bewertungen
+                </div>
+            </div>
+            <div id="host_info" class="flex items-center mb-6">
+                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                    <img src="host-profile-pic.jpg" alt="Host" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <div class="font-semibold">John Doe</div>
+                    <div class="text-sm text-gray-600">Superhost &bull; Host since 2018</div>
+                </div>
+            </div>
+            <div class="mb-6">
+                <div id="check_in_info" class="flex items-center">
+                    <div class="mr-4">&#9200;</div>
+                    <div>
+                        <div class="font-semibold">Self check-in</div>
+                        <div class="text-sm text-gray-600">Check yourself in with the lockbox</div>
+                    </div>
+                </div>
+                <div id="house_info" class="flex items-center mt-4">
+                    <div class="mr-4">&#128526;</div>
+                    <div>
+                        <div class="font-semibold">Entire home</div>
+                        <div class="text-sm text-gray-600">You'll have the villa to yourself</div>
+                    </div>
+                </div>
+                <div id="location_info" class="flex items-center mt-4">
+                    <div class="mr-4">&#127968;</div>
+                    <div>
+                        <div class="font-semibold">Malibu, California</div>
+                        <div class="text-sm text-gray-600">Located near the beach with stunning views</div>
+                    </div>
+                </div>
+            </div>
+            <div id="description" class="text-sm text-gray-700">
+                <p>This luxurious villa offers breathtaking views of the Pacific Ocean...</p>
+                <!-- More detailed description goes here -->
+            </div>
+        </div>
+        <div id="right_side col-span-1">
+            <div id="booking_card" class="w-full md:w-2/3 lg:w-1/2 border-solid border border-gray-200 rounded-lg p-6">
+                <div class="mb-4">
+                    <label for="checkin_date" class="block text-sm font-semibold text-gray-700">Check-in</label>
+                    <input type="date" id="checkin_date" class="w-full border-gray-300 rounded-md mt-1">
+                </div>
+                <div class="mb-4">
+                    <label for="checkout_date" class="block text-sm font-semibold text-gray-700">Check-out</label>
+                    <input type="date" id="checkout_date" class="w-full border-gray-300 rounded-md mt-1">
+                </div>
+                <div class="mb-4">
+                    <label for="guests" class="block text-sm font-semibold text-gray-700">Guests</label>
+                    <select id="guests" class="w-full border-gray-300 rounded-md mt-1">
+                        <option value="1">1 guest</option>
+                        <option value="2" selected>2 guests</option>
+                        <option value="3">3 guests</option>
+                        <option value="4">4 guests</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <div class="text-xl font-semibold text-gray-800">$250 <span class="text-sm text-gray-600">/ night</span></div>
+                </div>
+                <hr class="my-4 border-t border-gray-300">
+                <button class="w-full bg-blue-500 text-white font-semibold py-2 rounded-md">Book Now</button>
+            </div>
+        </div>
+    </section>
+</div>
 
 </body>
+
 </html>
