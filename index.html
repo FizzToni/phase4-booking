@@ -2,37 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Liebesnest der besonderen Art</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
         * {
             font-family: "Nunito Sans", sans-serif;
         }
-        .text-2xs {
+        .small-text {
             font-size: 0.6rem;
+            font-weight: 800;
         }
     </style>
 </head>
 <body>
-<header class="flex flex-row py-7 border-solid border shadow-sm place-content-center">
-    <div class="flex justify-between w-2/4 items-center">
+<header class="flex flex-row py-4 border-solid border shadow-sm place-content-center">
+    <div class="flex justify-between w-3/5 items-center">
         <div class="flex items-center">
             <!-- Icon and text -->
             <img src="icon.png" alt="Icon" class="w-8 h-8 mr-2">
             <div class="text-xl font-bold">b'n'styria</div>
         </div>
         <div class="flex items-center border rounded-full p-2">
-            <!-- Badge -->
-            <div class="relative inline-block mr-4">
-                <!-- Trigger -->
-                <button class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><g fill="none"><path d="M2 16h28M2 24h28M2 8h28"></path></g></svg>
-                </button>
+            <div class="relative inline-block mr-4 ml-2">
+                <button class="fa-solid fa-bars"></button>
             </div>
-            <!-- Profile icon placeholder -->
-            <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
+            <!--TODO: Profile icon placeholder -->
+            <div class="flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full">
+                <i class="fa-solid fa-user text-white"></i>
+            </div>
         </div>
     </div>
 </header>
@@ -67,12 +66,13 @@
 
     </section>
     <section class="grid grid-cols-3 gap-8 mt-8" id="details">
+
         <div class="col-span-2 mr-8" id="left_side">
             <div class="mb-6" id="title_info">
                 <div class="text-2xl font-semibold">Steirisches Liebesnest in St. Anna am Lavantegg, Österreich</div>
                 <div class="text-md text-gray-600">2 Gäste &bull; 1 Schlafzimmer &bull; 1 Doppelbett &bull; 1 Bad</div>
             </div>
-            <div class="flex items-center border rounded-2xl my-8 p-4 gap-6" id="review_card">
+            <div class="flex items-center border rounded-2xl my-8 p-4 gap-6 shadow-sm" id="review_card">
                 <div class="w-min flex flex-col items-center">
                     <img alt="award-icon" class="w-8" src="assets/guarantee-icon.png">
                     Gästeliebling
@@ -81,7 +81,7 @@
                 <div class="text-center w-32">
                     <span class="font-bold text-xl">4,87</span>
                     <br>
-                    <span class="text-xs">💛💛💛💛💛</span>
+                    <span class="small-text">💛💛💛💛💛</span>
                 </div>
                 <div class="border-b w-8 transform origin-center rotate-90"></div>
                 <div class="text-center">
@@ -102,22 +102,25 @@
                 <div class="flex items-center" id="check_in_info">
                     <div class="mr-4">&#9200;</div>
                     <div>
-                        <div class="font-semibold">Self check-in</div>
-                        <div class="text-sm text-gray-600">Check yourself in with the lockbox</div>
+                        <div class="font-semibold">Persönlicher Check-In</div>
+                        <div class="text-sm text-gray-600">Schnell, einfach und jederzeit</div>
                     </div>
                 </div>
                 <div class="flex items-center mt-4" id="house_info">
                     <div class="mr-4">&#128526;</div>
                     <div>
-                        <div class="font-semibold">Entire home</div>
-                        <div class="text-sm text-gray-600">You'll have the villa to yourself</div>
+                        <div class="font-semibold">Wohlfühl Oase</div>
+                        <div class="text-sm text-gray-600">Genießt die Zeit zu Zweit</div>
                     </div>
                 </div>
                 <div class="flex items-center mt-4" id="location_info">
-                    <div class="mr-4">&#127968;</div>
+                    <div class="relative w-10 h-10">
+                        <i class="absolute fa-solid fa-mountain text-gray-700 text-lg"></i>
+                        <i class="absolute fa-solid fa-tree text-green-600" style="margin-top: 5px; margin-left: 10px;"></i>
+                    </div>
                     <div>
-                        <div class="font-semibold">Malibu, California</div>
-                        <div class="text-sm text-gray-600">Located near the beach with stunning views</div>
+                        <div class="font-semibold">Weg vom Stress</div>
+                        <div class="text-sm text-gray-600">In Waldnähe, Abseits von Straßen</div>
                     </div>
                 </div>
             </div>
@@ -126,33 +129,68 @@
                 <!-- More detailed description goes here -->
             </div>
         </div>
+
         <div id="right_side col-span-1">
             <div class="w-full border-solid border border-gray-200 rounded-xl p-6 shadow-xl" id="booking_card">
                 <div class="grid grid-cols-2">
-                    <!-- Check-in and Check-out -->
-                    <div class="col-span-2 flex gap-4 m-2 border-t  rounded-md ">
-                        <div>
-                            <label for="check-in" class="uppercase text-2xs font-bold">Check-in:</label>
-                            <input type="date" id="check-in" class="text-sm border border-gray-300 rounded-md px-1 py-1">
+                    <div class="col-span-2 flex border border-gray-400 rounded-md rounded-b-none">
+                        <div class="w-1/2 border-r border-gray-400 px-2 py-1">
+                            <label for="check-in" class="uppercase small-text">Check-in</label>
+                            <div class="text-sm">14.05.2024</div>
                         </div>
-                        <div>
-                            <label for="check-in" class="uppercase text-2xs font-bold">Check-out:</label>
-                            <input type="date" id="check-out" class="text-sm border border-gray-300 rounded-md px-1 py-1">
+                        <div class="w-1/2 px-2 py-1">
+                            <label for="check-out" class="uppercase small-text">Check-out</label>
+                            <div class="text-sm">17.05.2024</div>
                         </div>
                     </div>
                     <!-- Number of guests -->
-                    <div class="col-span-1 flex items-center">
-                        <label for="guests" class="mr-2">Guests:</label>
-                        <select id="guests" class="border border-gray-300 rounded-md px-2 py-1">
-                            <option value="1">1 guest</option>
-                            <option value="2">2 guests</option>
-                            <option value="3">3 guests</option>
-                            <!-- Add more options as needed -->
-                        </select>
+                    <div class="col-span-2 flex border border-gray-400 rounded-md rounded-t-none border-t-0">
+                        <div class="w-full px-2 py-1 flex items-center justify-between">
+                            <div>
+                                <label for="guests" class="uppercase small-text">Gäste</label>
+                                <div class="text-sm">2 Gäste</div>
+                            </div>
+                            <button class="mr-2 fas fa-chevron-down"></button>
+                        </div>
                     </div>
                 </div>
+
+                <div class="mt-4">
+                    <label class=" uppercase small-text">Stornobedingungen</label>
+                    <div class="flex border border-gray-400 rounded-md rounded-b-none items-center justify-between">
+                        <div class="py-3 px-2">
+                            <div class="text-sm p-0">Nicht erstattungsfähig</div>
+                            <div class="text-sm p-0">Gesamtpreis: 1 398 €</div>
+                        </div>
+                        <button class="mr-4 fa-solid fa-circle-dot"></button>
+                    </div>
+                    <div class="flex border border-gray-400 rounded-md rounded-t-none border-t-0">
+                        <div class="py-3 px-2">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-sm p-0">Erstattungsfähig</div>
+                                    <div class="text-sm p-0">Gesamtpreis: 1 514 €</div>
+                                </div>
+                                <button class="mr-2 fa-regular fa-circle"></button>
+                            </div>
+                            <div class="text-xs text-gray-400 pr-8 mt-1">
+                                Storniere vor dem 12. Mai kostenlos. Danach erhältst du eine anteilige Rückerstattung.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <span class="text-2xl font-bold text-gray-400 line-through">277 €</span>
+                    <br>
+                    <span class="text-2xl font-bold">232 €</span>
+                    <span class="text-gray-600">Nacht</span>
+                    <br>
+                    <button class="underline text-sm font-bold">Details einblenden</button>
+                    <button class="text-sm mr-2 fas fa-chevron-down"></button>
+                </div>
                 <hr class="my-4 border-t border-gray-300">
-                <button class="w-full bg-blue-500 text-white font-semibold py-2 rounded-md">Book Now</button>
+                <button class="w-full bg-red-800 text-white font-semibold py-2 rounded-md">Jetzt buchen</button>
             </div>
         </div>
     </section>
