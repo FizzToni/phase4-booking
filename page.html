@@ -1,59 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+        * {
+            font-family: "Nunito Sans", sans-serif;
+        }
+        .text-2xs {
+            font-size: 0.6rem;
+        }
+    </style>
 </head>
 <body>
-<header class="flex flex-row py-7 border solid shadow-sm place-content-center">
-    <div class="flex justify-between w-2/4">
-        <div>
-            LOGO
+<header class="flex flex-row py-7 border-solid border shadow-sm place-content-center">
+    <div class="flex justify-between w-2/4 items-center">
+        <div class="flex items-center">
+            <!-- Icon and text -->
+            <img src="icon.png" alt="Icon" class="w-8 h-8 mr-2">
+            <div class="text-xl font-bold">b'n'styria</div>
         </div>
-        <div>
-            Profil
+        <div class="flex items-center border rounded-full p-2">
+            <!-- Badge -->
+            <div class="relative inline-block mr-4">
+                <!-- Trigger -->
+                <button class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><g fill="none"><path d="M2 16h28M2 24h28M2 8h28"></path></g></svg>
+                </button>
+            </div>
+            <!-- Profile icon placeholder -->
+            <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
         </div>
     </div>
 </header>
-<div id="wrapper" class="flex flex-col place-content-center w-3/5 mx-auto">
-    <section id="main" class="">
-        <div id="title" class="flex flex-row justify-between items-center my-6">
+
+<div class="flex flex-col place-content-center w-3/5 mx-auto" id="wrapper">
+    <section class="" id="main">
+        <div class="flex flex-row justify-between items-center my-6" id="title">
             <div class="text-3xl font-semibold">Steirisches Liebesnest in St. Anna am Lavantegg, Österreich</div>
             <div class="text-red-500">&#10084;</div>
         </div>
-        <div id="images" class="mt-4 grid grid-cols-4 gap-2 justify-items-center">
+        <div class="mt-4 grid grid-cols-4 gap-2 justify-items-center" id="images">
             <div class="col-span-1">
                 <div class="relative mb-2">
-                    <img src="assets/kitchen.jpg" alt="Kitchen" class="rounded-2xl shadow-lg">
+                    <img alt="Kitchen" class="rounded-2xl shadow-lg" src="assets/kitchen.jpg">
                 </div>
                 <div class="relative">
-                    <img src="assets/fireplace.jpg" alt="Fireplace" class="rounded-2xl shadow-lg">
+                    <img alt="Fireplace" class="rounded-2xl shadow-lg" src="assets/fireplace.jpg">
                 </div>
             </div>
             <div class="col-span-2 relative">
-                <img src="assets/house.jpg" alt="Cabin" class="rounded-2xl shadow-lg">
+                <img alt="Cabin" class="rounded-2xl shadow-lg" src="assets/house.jpg">
             </div>
             <div class="col-span-1">
                 <div class="relative mb-2">
-                    <img src="assets/logs.jpg" alt="Log-Storage" class="rounded-2xl shadow-lg">
+                    <img alt="Log-Storage" class="rounded-2xl shadow-lg" src="assets/logs.jpg">
                 </div>
                 <div class="relative">
-                    <img src="assets/living.jpg" alt="Living room" class="rounded-2xl shadow-lg">
+                    <img alt="Living room" class="rounded-2xl shadow-lg" src="assets/living.jpg">
                 </div>
             </div>
         </div>
 
     </section>
-    <section id="details" class="grid grid-cols-3 gap-8 mt-8">
-        <div id="left_side" class="col-span-2">
-            <div id="title_info" class="mb-6">
+    <section class="grid grid-cols-3 gap-8 mt-8" id="details">
+        <div class="col-span-2 mr-8" id="left_side">
+            <div class="mb-6" id="title_info">
                 <div class="text-2xl font-semibold">Steirisches Liebesnest in St. Anna am Lavantegg, Österreich</div>
-                <div class="text-md text-gray-600">2 Gäste &bull; 1 Schlafzimmer &bull; 1 Doppelbett &bull; 1 Bad </div>
+                <div class="text-md text-gray-600">2 Gäste &bull; 1 Schlafzimmer &bull; 1 Doppelbett &bull; 1 Bad</div>
             </div>
-            <div id="review_card" class="flex items-center border rounded-2xl my-8 p-4 gap-6">
+            <div class="flex items-center border rounded-2xl my-8 p-4 gap-6" id="review_card">
                 <div class="w-min flex flex-col items-center">
-                    <img class="w-8" src="assets/guarantee-icon.png" alt="award-icon">
+                    <img alt="award-icon" class="w-8" src="assets/guarantee-icon.png">
                     Gästeliebling
                 </div>
                 <div class="text-left">Laut Gästen eine der aufregendsten Unterkünfte in der Steiermark</div>
@@ -68,9 +89,9 @@
                     Bewertungen
                 </div>
             </div>
-            <div id="host_info" class="flex items-center mb-6">
+            <div class="flex items-center mb-6" id="host_info">
                 <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                    <img src="host-profile-pic.jpg" alt="Host" class="w-full h-full object-cover">
+                    <img alt="Host" class="w-full h-full object-cover" src="host-profile-pic.jpg">
                 </div>
                 <div>
                     <div class="font-semibold">John Doe</div>
@@ -78,21 +99,21 @@
                 </div>
             </div>
             <div class="mb-6">
-                <div id="check_in_info" class="flex items-center">
+                <div class="flex items-center" id="check_in_info">
                     <div class="mr-4">&#9200;</div>
                     <div>
                         <div class="font-semibold">Self check-in</div>
                         <div class="text-sm text-gray-600">Check yourself in with the lockbox</div>
                     </div>
                 </div>
-                <div id="house_info" class="flex items-center mt-4">
+                <div class="flex items-center mt-4" id="house_info">
                     <div class="mr-4">&#128526;</div>
                     <div>
                         <div class="font-semibold">Entire home</div>
                         <div class="text-sm text-gray-600">You'll have the villa to yourself</div>
                     </div>
                 </div>
-                <div id="location_info" class="flex items-center mt-4">
+                <div class="flex items-center mt-4" id="location_info">
                     <div class="mr-4">&#127968;</div>
                     <div>
                         <div class="font-semibold">Malibu, California</div>
@@ -100,33 +121,35 @@
                     </div>
                 </div>
             </div>
-            <div id="description" class="text-sm text-gray-700">
+            <div class="text-sm text-gray-700" id="description">
                 <p>This luxurious villa offers breathtaking views of the Pacific Ocean...</p>
                 <!-- More detailed description goes here -->
             </div>
         </div>
         <div id="right_side col-span-1">
-            <div id="booking_card" class="w-full md:w-2/3 lg:w-1/2 border-solid border border-gray-200 rounded-lg p-6">
-                <div class="mb-4">
-                    <label for="checkin_date" class="block text-sm font-semibold text-gray-700">Check-in</label>
-                    <input type="date" id="checkin_date" class="w-full border-gray-300 rounded-md mt-1">
-                </div>
-                <div class="mb-4">
-                    <label for="checkout_date" class="block text-sm font-semibold text-gray-700">Check-out</label>
-                    <input type="date" id="checkout_date" class="w-full border-gray-300 rounded-md mt-1">
-                </div>
-                <div class="mb-4">
-                    <label for="guests" class="block text-sm font-semibold text-gray-700">Guests</label>
-                    <select id="guests" class="w-full border-gray-300 rounded-md mt-1">
-                        <option value="1">1 guest</option>
-                        <option value="2" selected>2 guests</option>
-                        <option value="3">3 guests</option>
-                        <option value="4">4 guests</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
-                <div class="mb-4">
-                    <div class="text-xl font-semibold text-gray-800">$250 <span class="text-sm text-gray-600">/ night</span></div>
+            <div class="w-full border-solid border border-gray-200 rounded-xl p-6 shadow-xl" id="booking_card">
+                <div class="grid grid-cols-2">
+                    <!-- Check-in and Check-out -->
+                    <div class="col-span-2 flex gap-4 m-2 border-t  rounded-md ">
+                        <div>
+                            <label for="check-in" class="uppercase text-2xs font-bold">Check-in:</label>
+                            <input type="date" id="check-in" class="text-sm border border-gray-300 rounded-md px-1 py-1">
+                        </div>
+                        <div>
+                            <label for="check-in" class="uppercase text-2xs font-bold">Check-out:</label>
+                            <input type="date" id="check-out" class="text-sm border border-gray-300 rounded-md px-1 py-1">
+                        </div>
+                    </div>
+                    <!-- Number of guests -->
+                    <div class="col-span-1 flex items-center">
+                        <label for="guests" class="mr-2">Guests:</label>
+                        <select id="guests" class="border border-gray-300 rounded-md px-2 py-1">
+                            <option value="1">1 guest</option>
+                            <option value="2">2 guests</option>
+                            <option value="3">3 guests</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
                 </div>
                 <hr class="my-4 border-t border-gray-300">
                 <button class="w-full bg-blue-500 text-white font-semibold py-2 rounded-md">Book Now</button>
