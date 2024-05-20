@@ -31,7 +31,10 @@
             <div class="text-xl font-bold text-steiermoak-grea">b'n'styria</div>
         </div>
         <div class="flex items-center">
-            <i class="fa-solid fa-earth-europe mr-6 text-lg"></i>
+            <button class="text-sm font-bold mr-4">
+                Als Gastgeber:in loslegen
+            </button>
+            <button class="fa-solid fa-earth-europe mr-6 text-lg"></button>
             <div class="flex items-center border rounded-full p-2">
                 <div class="relative inline-block mr-4 ml-2">
                     <button class="fa-solid fa-bars"></button>
@@ -49,26 +52,26 @@
     <section class="" id="main">
         <div class="flex flex-row justify-between items-center my-6" id="title">
             <div class="text-3xl font-semibold">Steirisches Liebesnest in St. Anna am Lavantegg, Österreich</div>
-            <div class="text-red-500">&#10084;</div>
+            <button class="text-lg fa-solid fa-heart-circle-plus text-red-500 hover:text-red-700"></button>
         </div>
         <div class="mt-4 grid grid-cols-4 gap-2 justify-items-center" id="images">
             <div class="col-span-1">
                 <div class="relative mb-2">
-                    <img alt="Kitchen" class="rounded-2xl shadow-lg" src="assets/kitchen.jpg">
+                    <img alt="Kitchen" class="rounded-2xl shadow-lg" src="assets/kuchi.jpg">
                 </div>
                 <div class="relative">
-                    <img alt="Fireplace" class="rounded-2xl shadow-lg" src="assets/fireplace.jpg">
+                    <img alt="Fireplace logs" class="rounded-2xl shadow-lg" src="assets/brennhoiz.jpg">
                 </div>
             </div>
             <div class="col-span-2 relative">
-                <img alt="Cabin" class="rounded-2xl shadow-lg" src="assets/house.jpg">
+                <img alt="Cabin" class="rounded-2xl shadow-lg" src="assets/gonze-hittn.jpg">
             </div>
             <div class="col-span-1">
                 <div class="relative mb-2">
-                    <img alt="Log-Storage" class="rounded-2xl shadow-lg" src="assets/logs.jpg">
+                    <img alt="Living Room" class="rounded-2xl shadow-lg" src="assets/stubm.jpg">
                 </div>
                 <div class="relative">
-                    <img alt="Living room" class="rounded-2xl shadow-lg" src="assets/living.jpg">
+                    <img alt="Window" class="rounded-2xl shadow-lg" src="assets/fensta_vo_aust.jpg">
                 </div>
             </div>
         </div>
@@ -76,7 +79,7 @@
     </section>
     <section class="grid grid-cols-3 gap-8 mt-8" id="details">
 
-        <div class="col-span-2 mr-8" id="left_side">
+        <div class="col-span-2 mr-20" id="left_side">
             <div class="mb-6" id="title_info">
                 <div class="text-2xl font-semibold">Steirisches Liebesnest in St. Anna am Lavantegg, Österreich</div>
                 <div class="text-md text-gray-600">2 Gäste &bull; 1 Schlafzimmer &bull; 1 Doppelbett &bull; 1 Bad</div>
@@ -114,8 +117,9 @@
                     <div class="text-sm text-gray-600">Superhost &bull; Host since 2018</div>
                 </div>
             </div>
-            <hr class="my-4 border-t border-gray-300">
-            <div class="mb-6">
+            <hr class="my-4 border-t border-gray-300 my-8">
+
+            <div>
                 <div class="flex items-center" id="check_in_info">
                     <div class="mr-4">&#9200;</div>
                     <div>
@@ -141,8 +145,8 @@
                     </div>
                 </div>
             </div>
+            <hr class="my-4 border-t border-gray-300 my-8">
 
-            <hr class="my-4 border-t border-gray-300">
             <div class="whitespace-pre-line" id="description">
                 <p>Bitte bis zum Ende lesen und den richtigen Text noch einfügen!
                     Entspanne Dich mit Familie und Freunde in diesem super geräumigen Luxus Wellness "1A Chalet"
@@ -150,12 +154,76 @@
                     mit Whirlpool und Infrarotkabine.  Handtücher/Bettwäsche im Preis INKLUDIERT!
                     Das Chalet bietet Platz für max 10 Gäste. 3 Doppelzimmer + 1 Zimmer mit Hochbett + Ausziehcouch im Wohnzimmer.
                 </p>
+                <button class="underline text-sm font-bold">Mehr anzeigen...</button>
                 <!-- More detailed description goes here -->
             </div>
+            <hr class="my-4 border-t border-gray-300 my-8">
+
+            <div>
+                <div class="text-2xl font-bold mb-4">Wo ihr schlafen werdet</div>
+                <div class="flex gap-4">
+                    <div>
+                        <img src="assets/AI/fireplace.jpg" alt="Schlafzimmer" class="h-52 w-80 mb-2 rounded-xl">
+                        <span class="">Das Zimmer</span>
+                    </div>
+                    <div>
+                        <img src="assets/AI/living.jpg" alt="Doppelbett" class="h-52 w-80 mb-2 rounded-xl">
+                        <span class="">Kingsize Doppelbett</span>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="my-4 border-t border-gray-300 my-8">
+
+            <div>
+                <span class="text-2xl font-bold mb-4">Das bietet euch diese Unterkunft</span>
+                <div class="flex gap-8 my-4">
+                    <!--left infos-->
+                    <div class="flex flex-col gap-4">
+                        <div class="text-lg">
+                            <i class="mr-2 fa-solid fa-wifi"></i>
+                            <span>WLAN</span>
+                        </div>
+                        <div class="text-lg">
+                            <i class="mr-2 fa-solid fa-mountain-sun"></i>
+                            <span>Tolle Aussicht</span>
+                        </div>
+                        <div class="text-lg">
+                            <i class="mr-2 fa-solid fa-paw"></i>
+                            <span>Haustiere sind erlaubt</span>
+                        </div>
+                        <div class="text-lg">
+                            <i class="mr-2 fa-solid fa-kitchen-set"></i>
+                            <span>Küche</span>
+                        </div>
+                    </div>
+                    <!--right infos-->
+                    <div class="flex flex-col gap-4">
+                        <div class="text-lg">
+                            <i class="mr-2 fa-solid fa-kit-medical"></i>
+                            <span>Erste Hilfe Set</span>
+                        </div>
+                        <div class="text-lg">
+                            <i class="mr-2 fa-solid fa-tv"></i>
+                            <span>TV</span>
+                        </div>
+                        <div class="text-lg">
+                            <i class="mr-2 fa-solid fa-archway"></i>
+                            <span>Kamin</span>
+                        </div>
+                        <div class="text-lg">
+                            <i class="mr-2 fa-solid fa-seedling"></i>
+                            <span>Garten</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="border border-gray-800 rounded py-2 px-4 hover:bg-gray-100">Alle Merkmale anzeigen</button>
+            </div>
+
         </div>
 
-        <div id="right_side col-span-1">
-            <div class="w-full border-solid border border-gray-200 rounded-xl p-6 shadow-xl" id="booking_card">
+        <div id="right_side">
+            <div class="w-full border-solid border border-gray-200 rounded-xl p-6 shadow-xl sticky top-20" id="booking_card">
                 <div class="grid grid-cols-2">
                     <div class="col-span-2 flex border border-gray-400 rounded-md rounded-b-none">
                         <div class="w-1/2 border-r border-gray-400 px-2 py-1">
@@ -218,6 +286,13 @@
             </div>
         </div>
     </section>
+
+    <hr class="my-4 border-t border-gray-300 my-8">
+
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae culpa cum exercitationem id maxime perspiciatis qui quis velit voluptas. Alias dolorum harum in, libero modi necessitatibus officia perspiciatis provident?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores beatae cupiditate doloribus eos error esse, expedita quidem. A architecto assumenda at autem consequatur corporis cumque cupiditate deleniti doloribus eligendi et ex exercitationem id impedit inventore itaque iure laudantium magni maxime modi mollitia neque numquam quam quasi quia, rem reprehenderit sapiente sit soluta tempora unde veritatis vitae voluptate! Ducimus fugit harum hic quidem recusandae temporibus. Ab asperiores, delectus eaque et illo inventore iste nihil possimus quia, rerum tempora totam veritatis voluptatibus? Distinctio nemo nulla possimus quos voluptatibus. Accusantium cupiditate, et magnam nisi praesentium provident sed similique temporibus? Deleniti, esse, ullam.
+    </div>
 </div>
 
 </body>
