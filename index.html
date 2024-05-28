@@ -20,10 +20,15 @@
         .bg-steiermoak-grea {
             background-color: #00843D;
         }
+        .bg-image {
+            background-color: #E4E6DE;
+            background-image: url("/assets/bg-rosa.jpg");
+            background-size: ;
+        }
     </style>
 </head>
-<body>
-<header class="flex flex-row py-4 border-solid border shadow-sm place-content-center">
+<body class="bg-image">
+<header class="flex flex-row py-4 border-solid border shadow-sm place-content-center bg-white bg-opacity-60">
     <div class="flex justify-between w-3/5 items-center">
         <div class="flex items-center">
             <!-- Icon and text -->
@@ -79,11 +84,11 @@
         </div>
 
     </section>
-    <section class="grid grid-cols-3 gap-8 mt-8" id="details">
+    <section class="grid grid-cols-3 gap-8 mt-8 p-4 rounded-xl bg-white bg-opacity-80" id="details">
 
         <div class="col-span-2 mr-20" id="left_side">
             <div class="mb-6" id="title_info">
-                <div class="text-2xl font-semibold">Steirisches Liebesnest in St. Anna am Lavantegg, Österreich</div>
+                <div class="text-2xl font-semibold">Steirisches Liebesnest in St. Anna am Lavantegg</div>
                 <div class="text-md text-gray-600">2 Gäste &bull; 1 Schlafzimmer &bull; 1 Doppelbett &bull; 1 Bad</div>
             </div>
             <div class="flex items-center border rounded-2xl my-8 p-4 gap-6 shadow-sm" id="review_card">
@@ -227,20 +232,20 @@
         </div>
 
         <div id="right_side">
-            <div class="w-full border-solid border border-gray-200 rounded-xl p-6 shadow-xl sticky top-20" id="booking_card">
+            <div class="w-full border-solid border border-gray-200 p-6 shadow-2xl sticky top-20 bg-white" id="booking_card">
                 <div class="grid grid-cols-2">
-                    <div class="col-span-2 flex border border-gray-400 rounded-md rounded-b-none">
+                    <div class="col-span-2 flex border border-gray-400 rounded-b-none">
                         <div class="w-1/2 border-r border-gray-400 px-2 py-1">
                             <label class="uppercase small-text">Check-in</label>
-                            <div class="text-sm">14.05.2024</div>
+                            <div class="text-sm">07.06.2025</div>
                         </div>
                         <div class="w-1/2 px-2 py-1">
                             <label class="uppercase small-text">Check-out</label>
-                            <div class="text-sm">17.05.2024</div>
+                            <div class="text-sm">09.06.2025</div>
                         </div>
                     </div>
                     <!-- Number of guests -->
-                    <div class="col-span-2 flex border border-gray-400 rounded-md rounded-t-none border-t-0">
+                    <div class="col-span-2 flex border border-gray-400  rounded-t-none border-t-0">
                         <div class="w-full px-2 py-1 flex items-center justify-between">
                             <div>
                                 <label class="uppercase small-text">Gäste</label>
@@ -253,14 +258,14 @@
 
                 <div class="mt-4">
                     <label class=" uppercase small-text">Stornobedingungen</label>
-                    <div class="flex border border-gray-400 rounded-md rounded-b-none items-center justify-between">
+                    <div class="flex border border-gray-400 rounded-b-none items-center justify-between">
                         <div class="py-3 px-2">
                             <div class="text-sm p-0">Nicht erstattungsfähig</div>
                             <div class="text-sm p-0">Gesamtpreis: 1 398 €</div>
                         </div>
                         <button class="mr-4 fa-solid fa-circle-dot"></button>
                     </div>
-                    <div class="flex border border-gray-400 rounded-md rounded-t-none border-t-0">
+                    <div class="flex border border-gray-400 rounded-t-none border-t-0">
                         <div class="py-3 px-2">
                             <div class="flex items-center justify-between">
                                 <div>
